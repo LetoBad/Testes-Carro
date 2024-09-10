@@ -58,4 +58,8 @@ public class Motor {
 	public void ligarMotor() {
 		System.out.println("Motor ligado");
 	}
+	public void desligarMotor() {
+		System.out.println("Motor desligado");
+	}
+	
 }

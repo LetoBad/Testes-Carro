@@ -65,12 +65,25 @@ public class Transmissao {
 		this.estado = estado;
 	}
 
-	public void aumentarMarcha() {
-		if (marchaAtual < 6) {
-			marchaAtual++;
-			System.out.println("Marcha aumentada para " + marchaAtual);
+	public void trocarMarcha(int marcha) {
+		if (marcha >= 1 && marcha <= numeroMarchas) {
+			this.marchaAtual = marcha;
+			System.out.println("Marcha trocada para: " + marchaAtual);
 		} else {
-			System.out.println("Não é possível aumentar mais!");
+			System.out.println("Marcha inválida. O sistema suporta até " + numeroMarchas + " marchas.");
 		}
 	}
+
+	public void verificarEstado() {
+		if (estado) {
+			System.out.println("Transmissão funcionando corretamente.");
+		} else {
+			System.out.println("Transmissão inativa ou com defeito.");
+		}
+	}
+
+	public void substituirComponente(String componente) {
+		System.out.println("Componente " + componente + " da transmissão substituído.");
+	}
+
 }

@@ -73,6 +73,9 @@ public class Suspensao {
 	public void VerificaEstado() {
 		System.out.println("O estado é" + estado);
 	}
+	public void substituir() {
+		System.out.println("Suspenasão trocada");
+	}
 	
 	
 }

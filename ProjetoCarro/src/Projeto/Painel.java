@@ -58,4 +58,31 @@ public class Painel {
 	public String exibirStatus() {
 		return "Motor ligado\nTransmissão ativa\nSistema elétrico funcionando\nPronto para acelerar o carro";
 	}
+	public void ligarDisplay() {
+        if (!estado) {
+            estado = true;
+            System.out.println("O display do painel foi ligado.");
+        } else {
+            System.out.println("O display do painel já está ligado.");
+        }
+    }
+
+    
+    public void desligarDisplay() {
+        if (estado) { 
+            estado = false;
+            System.out.println("O display do painel foi desligado.");
+        } else {
+            System.out.println("O display do painel já está desligado.");
+        }
+    }
+
+    
+    public void atualizarInformacoes(String info) {
+        if (estado) {
+            System.out.println("Atualizando informações no painel: " + info);
+        } else {
+            System.out.println("O display está desligado. Ligue o display para atualizar as informações.");
+        }
+    }
 }

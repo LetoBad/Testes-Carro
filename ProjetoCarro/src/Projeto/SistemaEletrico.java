@@ -58,4 +58,28 @@ public class SistemaEletrico {
 	public void ativarParteEletrica() {
 		System.out.println("Sistema eletrico ativado.");
 	}
+	
+    public void verificarBateria() {
+        if (capacidade > 20) {
+            System.out.println("Bateria em bom estado. Capacidade restante: " + capacidade + "%.");
+        } else {
+            System.out.println("Bateria fraca. Capacidade restante: " + capacidade + "%. Recarregue ou substitua a bateria.");
+        }
+    }
+
+    
+    public void substituirBateria() {
+        tipoBateria = "nova";
+        capacidade = 100;
+        System.out.println("Bateria substituída. Capacidade atual: " + capacidade + "%.");
+    }
+
+  
+    public void testarSistema() {
+        if (estado) {
+            System.out.println("Sistema elétrico está funcionando corretamente.");
+        } else {
+            System.out.println("Sistema elétrico está desligado. Ligue para testar.");
+        }
+    }
 }

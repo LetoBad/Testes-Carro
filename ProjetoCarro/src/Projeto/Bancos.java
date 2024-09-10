@@ -55,7 +55,27 @@ public class Bancos {
         this.estado = estado;
     }
 
-    
+    public void ajustarEncosto(String posicao) {
+        if (posicao.equalsIgnoreCase("reto") || posicao.equalsIgnoreCase("inclinada")) {
+            System.out.println("O encosto foi ajustado para a posição: " + posicao);
+        } else {
+            System.out.println("Posição inválida. Escolha entre 'reto' ou 'inclinada'.");
+        }
+    }
+
+   
+    public void ajustarAltura(double novaAltura) {
+        if (novaAltura >= 0 && novaAltura <= 2) {
+            System.out.println("A altura do banco foi ajustada para: " + novaAltura + " metros.");
+        } else {
+            System.out.println("Altura inválida. Insira um valor entre 0 e 2 .");
+        }
+    }
+
+   
+    public void verificarEstado() {
+        System.out.println("O estado atual dos bancos é: " + estado);
+    }
     
 }
 

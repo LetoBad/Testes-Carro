@@ -55,4 +55,22 @@ public class Pneus {
 		this.estado = estado;
 	}
 
+	public void verificarPressao() {
+		System.out.println("A pressão atual dos pneus é: " + pressao + " PSI.");
+	}
+
+	public void ajustarPressao(double novaPressao) {
+		if (novaPressao > 0 && novaPressao <= 50) {
+			pressao = novaPressao;
+			System.out.println("A pressão dos pneus foi ajustada para: " + novaPressao + " PSI.");
+		} else {
+			System.out.println("Pressão inválida. Insira um valor entre 1 e 50 PSI.");
+		}
+	}
+
+	public void substituir() {
+		estado = "novo";
+		System.out.println("O pneu foi substituído. Estado atual: " + estado);
+	}
+
 }
