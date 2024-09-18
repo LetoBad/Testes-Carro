@@ -8,7 +8,7 @@ public class Suspensao {
 	private String marca;
 	private String estado;
 
-	public Suspensao(String tipo, String material, double altura, int rigidez, String marca , String estado) {
+	public Suspensao(String tipo, String material, double altura, int rigidez, String marca, String estado) {
 		this.tipo = tipo;
 		this.material = material;
 		this.altura = altura;
@@ -56,8 +56,7 @@ public class Suspensao {
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
-	
-	
+
 	public String getEstado() {
 		return estado;
 	}
@@ -69,14 +68,17 @@ public class Suspensao {
 	public void AjustarAltura(double novaAltura) {
 		this.altura = novaAltura;
 	}
-	
+
+	public void AjustarRigidez(double novaRigidez) {
+		this.altura = novaRigidez;
+	}
+
 	public void VerificaEstado() {
 		System.out.println("O estado é" + estado);
 	}
+
 	public void substituir() {
 		System.out.println("Suspenasão trocada");
 	}
-	
-	
-}
 
+}
