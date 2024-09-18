@@ -6,13 +6,15 @@ public class Direcao {
 	private String material;
 	private double relacion;
 	private String marca;
+	private double angulo;
 
-	public Direcao(String tipo, boolean assistido, String material, double relacion, String marca) {
+	public Direcao(String tipo, boolean assistido, String material, double relacion, String marca, double angulo) {
 		this.tipo = tipo;
 		this.assistido = assistido;
 		this.material = material;
 		this.relacion = relacion;
 		this.marca = marca;
+		this.angulo = angulo;
 	}
 
 	public String getTipo() {
@@ -55,9 +57,19 @@ public class Direcao {
 		this.marca = marca;
 	}
 
+	public double getAngulo() {
+		return angulo;
+	}
+
+	public void setAngulo(double angulo) {
+		this.angulo = angulo;
+	}
+
+
 	public void ajustarDirecao(double angulo) {
 		if (angulo >= -180 && angulo <= 180) {
 			System.out.println("O ângulo da direção foi ajustado para: " + angulo + " graus.");
+			setAngulo(angulo);
 		} else {
 			System.out.println("Ângulo inválido. Insira um valor entre -180 e 180 graus.");
 		}
@@ -74,5 +86,7 @@ public class Direcao {
 	public void substituirComponente(String componente) {
 		System.out.println("O componente " + componente + " foi substituído no sistema de direção.");
 	}
+
+
 
 }
