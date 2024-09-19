@@ -34,7 +34,7 @@ class AppTest {
     public static void setUpClass() {
         // c = new Carro();
         comb = new Combustivel("Gasolina", 70.0, 10, "x", true);
-        p = new Painel("Digital", "Normal", true, "Porsche", true);
+        p = new Painel("Digital", "Normal", true, "Porsche", true, "");
         dir = new Direcao("Assistida", true, "Carbono", 2.7, "Momo" , 0);
         port = new Portas(2, "Fibra", "Vermelho", "Normal", "Fechada");
         sistemaeletrico = new SistemaEletrico(12, 90, "Litio", true, "Mora");

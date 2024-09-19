@@ -1,18 +1,30 @@
 package testesap;
 
 public class Painel {
+
+	static Transmisao trans = new Transmisao(1, "Manual", 6, "Aluminio", "Porsche", true);
+
+	Luzes luzes = new Luzes("Farol", 10, "Branca", false, "LED");
+
+	Direcao direcao = new Direcao("Assistida", true, "Carbono", 2.7, "Momo", 0);
+
+
+
 	private String tipo;
 	private String display;
 	private boolean controle;
 	private String marca;
 	private boolean estado;
+	private int marcha;
+	private String pisca;
 
-	public Painel(String tipo, String display, boolean controle, String marca, boolean estado) {
+	public Painel(String tipo, String display, boolean controle, String marca, boolean estado , String pisca) {
 		this.tipo = tipo;
 		this.display = display;
 		this.controle = controle;
 		this.marca = marca;
 		this.estado = estado;
+		this.pisca = pisca;
 	}
 
 	public String getTipo() {
@@ -55,9 +67,7 @@ public class Painel {
 		this.estado = estado;
 	}
 
-	public String exibirStatus() {
-		return "Motor ligado\nTransmissão ativa\nSistema elétrico funcionando\nPronto para acelerar o carro";
-	}
+
 	public void ligarDisplay() {
         if (!estado) {
             estado = true;
@@ -85,6 +95,16 @@ public class Painel {
             System.out.println("O display está desligado. Ligue o display para atualizar as informações.");
         }
     }
+
+	public String getPisca() {
+		return pisca;
+	}
+
+	public void setPisca(String pisca) {
+		this.pisca = pisca;
+	}
+
+	
 
     /*public String Painel(String string, Object object, boolean b, Object object2, boolean c) {
         // TODO Auto-generated method stub

@@ -1,6 +1,7 @@
 package testesap;
 
 public class Direcao {
+
 	private String tipo;
 	private boolean assistido;
 	private String material;
@@ -65,7 +66,6 @@ public class Direcao {
 		this.angulo = angulo;
 	}
 
-
 	public void ajustarDirecao(double angulo) {
 		if (angulo >= -180 && angulo <= 180) {
 			System.out.println("O ângulo da direção foi ajustado para: " + angulo + " graus.");
@@ -86,7 +86,5 @@ public class Direcao {
 	public void substituirComponente(String componente) {
 		System.out.println("O componente " + componente + " foi substituído no sistema de direção.");
 	}
-
-
 
 }

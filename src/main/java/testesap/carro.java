@@ -4,7 +4,7 @@ public class carro {
     private boolean estado;
     private double velocidade = 0;
     Combustivel combustible = new Combustivel("Gasolina", 70.0, 10, "x", true);
-    Painel painel = new Painel("Digital", "Normal", true, "Porsche", false);
+    Painel painel = new Painel("Digital", "Normal", true, "Porsche", false, "");
     Portas porta = new Portas(2, "Fibra", "Vermelho", "Normal", "Fechada");
     SistemaEletrico sistemaeletrico = new SistemaEletrico(12, 90, "Litio", true, "Mora");
     Motor motor = new Motor("V8", 510, 2.8, "Porsche", true);
@@ -15,7 +15,6 @@ public class carro {
     Luzes luzes = new Luzes("Farol", 10, "Branca", false, "LED");
     static Pneus pneus = new Pneus("20/14", "Assetto", 22.0, "Michellini", "Bom");
     Suspensao suspensao = new Suspensao("Barra invertida", "Carbono", 20, 10, "Sparco", "Bom");
-
 
     public boolean isEstado() {
         return estado;
@@ -43,7 +42,7 @@ public class carro {
             System.out.println("O carro comecou a acelerar");
             velocidade = Math.random() * 10;
             System.out.println("Velocidade : " + velocidade);
-            combustible.setNivel(combustible.getNivel()-1);
+            combustible.setNivel(combustible.getNivel() - 1);
         } else {
             System.out.println("O carro esta em neutro ou desligado");
         }
@@ -114,41 +113,58 @@ public class carro {
     }
 
     public void ajustarPressaoPneu(double novaPressao) {
-            pneus.ajustarPressao(novaPressao);
-            pneus.verificarPressao();
+        pneus.ajustarPressao(novaPressao);
+        pneus.verificarPressao();
     }
 
-    public void ligarPainel(){
+    public void ligarPainel() {
         if (painel.getEstado() == false) {
             painel.setEstado(true);
             System.out.println("O Painel foi ligado");
-        }
-        else{
+        } else {
             System.out.println("O Painel ja esta desligado");
         }
     }
 
-    public void desligarPainel(){
+    public void desligarPainel() {
         if (painel.getEstado() == true) {
             painel.setEstado(false);
             System.out.println("Painel desligado");
         }
     }
 
-    public void rebaixarCarro(double novaAltura){
-            suspensao.setAltura(novaAltura);
-            System.out.println("A nova altura do carro é : " + suspensao.getAltura());
+    public void rebaixarCarro(double novaAltura) {
+        suspensao.setAltura(novaAltura);
+        System.out.println("A nova altura do carro é : " + suspensao.getAltura());
     }
 
-    public void rigidezCarro(int novaRigidez){
+    public void rigidezCarro(int novaRigidez) {
         suspensao.setRigidez(novaRigidez);
-        System.out.println("A nova rigidez do carro é : " +suspensao.getRigidez());
-}
+        System.out.println("A nova rigidez do carro é : " + suspensao.getRigidez());
+    }
 
+    public void abastecerCarro(int gas) {
+        if (estado = false) {
+            combustible.abastecer(gas);
+            System.out.println("O nivel de gasolina é : " + combustible.getNivel());
+        }
+    }
+
+    public void verpisca() {
+        if (direcao.getAngulo() < 0) {
+            painel.setPisca("<---");
+            System.out.println(painel.getPisca());
+        } else {
+            painel.setPisca("--->");
+            System.out.println(painel.getPisca());
+
+        }
+    }
 
     public static void main(String[] args) {
         carro Carro = new carro(true, 0);
         bancos.ajustarAltura(1.1);
+        Carro.abastecerCarro(20);
         pneus.verificarPressao();
         Carro.ajustarPressaoPneu(30);
         Carro.LigaCarro();
@@ -161,6 +177,7 @@ public class carro {
         trans.subirMarcha();
         trans.subirMarcha();
         Carro.virar(-10);
+        Carro.verpisca();
         trans.baixarMarcha();
         trans.baixarMarcha();
         trans.baixarMarcha();
@@ -170,6 +187,6 @@ public class carro {
         Carro.desligarLuzes();
         Carro.desligarPainel();
         Carro.DesligarCarro();
-        
+
     }
 }
