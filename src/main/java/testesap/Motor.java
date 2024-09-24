@@ -62,7 +62,7 @@ public class Motor {
 
 	public void ligarMotor() {
 		if (motor.getEstado()== false && combustible.getNivel() > 0 && sistemaeletrico.getEstado()== true) {
-			motor.setEstado(true);
+			estado = true;
 			System.out.println("motor ligado");
 		}
 		else{
@@ -70,8 +70,8 @@ public class Motor {
 		}
 	}
 	public void desligarMotor() {
-		if (motor.getEstado() == true) {
-			motor.setEstado(false);
+		if (estado == true) {
+			estado = false;
 			System.out.println("Motor Desligado");
 		}
 		else{
@@ -79,9 +79,5 @@ public class Motor {
 		}
 	}
 
-	public static void main(String[] args) {
-		motor.ligarMotor();
-		motor.desligarMotor();
-	}
 	
 }

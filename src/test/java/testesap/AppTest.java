@@ -1,21 +1,18 @@
 package testesap;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertIterableEquals;
-
 import java.util.Arrays;
 import java.util.List;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 class AppTest {
-    //private carro c;
     private static Painel p;
     private static Combustivel comb;
     private static Direcao dir;
@@ -32,7 +29,6 @@ class AppTest {
 
     @BeforeAll
     public static void setUpClass() {
-        // c = new Carro();
         comb = new Combustivel("Gasolina", 70.0, 10, "x", true);
         p = new Painel("Digital", "Normal", true, "Porsche", true, "");
         dir = new Direcao("Assistida", true, "Carbono", 2.7, "Momo" , 0);
