@@ -55,14 +55,9 @@ public class Freios {
 		this.desgaste = desgaste;
 	}
 
-	public String verificarDesgaste() {
-		if (desgaste >= 75) {
-			return "Desgaste alto, substituição recomendada.";
-		} else if (desgaste >= 50) {
-			return "Desgaste médio, monitore o desgaste regularmente.";
-		} else {
-			return "Desgaste baixo, os freios estão em bom estado.";
-		}
+	public double verificarDesgaste() {
+		return desgaste;
+		
 	}
 
 	public void substituirPastilhas() {

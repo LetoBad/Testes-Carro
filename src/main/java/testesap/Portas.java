@@ -56,8 +56,8 @@ public class Portas {
 	}
 	
     public void abrir() {
-        if (!estado.equals("aberta")) {
-            estado = "aberta";
+        if (!estado.equals("Aberta")) {
+            estado = "Aberta";
             System.out.println("A porta foi aberta.");
         } else {
             System.out.println("A porta já está aberta.");
@@ -66,8 +66,8 @@ public class Portas {
 
     
     public void fechar() {
-        if (!estado.equals("fechada")) {
-            estado = "fechada";
+        if (!estado.equals("Fechada")) {
+            estado = "Fechada";
             System.out.println("A porta foi fechada.");
         } else {
             System.out.println("A porta já está fechada.");
