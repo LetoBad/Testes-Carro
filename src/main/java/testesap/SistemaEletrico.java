@@ -57,6 +57,12 @@ public class SistemaEletrico {
 
 	public void ativarParteEletrica() {
 		System.out.println("Sistema eletrico ativado.");
+		estado = true;
+	}
+
+	public void desativarParteEletrica() {
+		System.out.println("Sistema eletrico ativado.");
+		estado = false;
 	}
 	
     public void verificarBateria() {

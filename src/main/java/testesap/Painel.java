@@ -79,14 +79,6 @@ public class Painel {
         }
     }
 
-    
-    public void atualizarInformacoes(String info) {
-        if (estado) {
-            System.out.println("Atualizando informações no painel: " + info);
-        } else {
-            System.out.println("O display está desligado. Ligue o display para atualizar as informações.");
-        }
-    }
 
 	public String getPisca() {
 		return pisca;
@@ -103,6 +95,21 @@ public class Painel {
 	public void setInfo(String info) {
 		this.info = info;
 	}
+
+
+	public void atualizarInformacoes(Motor motor, Combustivel sistemaCombustivel, Luzes luzes, Portas portas, Suspensao suspensao, Banco banco, SistemaEletrico sistemaeletrico, double velocidade) {
+        if (sistemaeletrico.getEstado()) {
+            info = "INFORMAÇÕES DO PAINEL:" + "\nPotência do Motor: " +
+                    motor.getPotencia() + "CV" + "\n" +
+                    portas.verificarEstado() + "\n" +
+                    suspensao.VerificaEstado() + "\n" +
+                    banco.getEstado() + "\n" +
+                    "Nível de Combustivel: " + sistemaCombustivel.verificarNivel() + "L" + "\n" +
+                    "Velocidade: " + velocidade + "Km";
+        } else {
+            System.out.println("Não foi possivel ligar o painel, há um problema no sistema elétrico.");
+        }
+    }
 
 
 }

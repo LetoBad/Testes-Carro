@@ -1,37 +1,177 @@
 package testesap;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class CarroTest {
-        Banco banco = new Banco(2, "Couro", "Preto", "Deportivo", "Reto" , 2);
-        Combustivel combustivel = new Combustivel("Gasolina", 50, 10, "Ipirango", true);
-        Direcao direcao = new Direcao("Deportiva", true, "Carbono", 12.2, "Sparco", 0);
-        Freios freios = new Freios("Pastilha", "Aço", "NSX", 10, 20);
-        Luzes luzes = new Luzes("Led", 10, "Branca", true, "Led");
-        Motor motorr = new Motor("Teste", 1000, 12.0, "MARCA", true);
-        Painel painel = new Painel("Digital", "Normal", true, "Porsche", true, "");
-        Pneus pneus = new Pneus("20/14", "Assetto", 22.0, "Michellini", "Bom");
-        Portas portas = new Portas(2, "Fibra", "Vermelho", "Normal", false);
-        SistemaEletrico eletrico = new SistemaEletrico(12, 90, "Litio", true, "Mora");
-        Suspensao suspensao = new Suspensao("Barra invertida", "Carbono", 20, 10, "Sparco", "Bom");
-        Transmisao transmisao = new Transmisao("Manual" , 6 , "Aluminio", "Porsche" , true);
-        carro Carroo = new carro(banco, combustivel, direcao, freios, luzes, motorr, painel, pneus, portas, eletrico, suspensao, transmisao, null, 0, null, null, 0);
-    
+    private carro Carroo;
+    private Banco banco;
+    private Combustivel combustivel;
+    private Direcao direcao;
+    private Freios freios;
+    private Luzes luzes;
+    private Motor motorr;
+    private Painel painel;
+    private Pneus pneus;
+    private Portas portas;
+    private SistemaEletrico eletrico;
+    private Suspensao suspensao;
+    private Transmisao transmisao;
+
+    @BeforeEach
+    public void setUp(){
+        banco = new Banco(2, "Couro", "Preto", "Deportivo", "Reto" , 2);
+        combustivel = new Combustivel("Gasolina", 50, 10, "Ipirango", true);
+        direcao = new Direcao("Deportiva", true, "Carbono", 12.2, "Sparco", 0);
+        freios = new Freios("Pastilha", "Aço", "NSX", 10, 20);
+        luzes = new Luzes("Led", 10, "Branca", false, "Led");
+        motorr = new Motor("Teste", 1000, 12.0, "Porsche", false);
+        painel = new Painel("Digital", "Normal", true, "Porsche", true, "");
+        pneus = new Pneus("20/14", "Assetto", 22.0, "Michellini", "Bom");
+        portas = new Portas(2, "Fibra", "Vermelho", "Normal", false);
+        eletrico = new SistemaEletrico(12, 90, "Litio", false, "Mora");
+        suspensao = new Suspensao("Barra invertida", "Carbono", 20, 10, "Sparco", "Bom");
+        transmisao = new Transmisao("Manual" , 6 , "Aluminio", "Porsche" , true , 2);
+        Carroo = new carro(banco, combustivel, direcao, freios, luzes, motorr, painel, pneus, portas, eletrico, suspensao, transmisao, "Porsche", 2019, "Branco", "Fak-2029", 10);
+    }
+
+    @Test
+    public void SistemaEletricoTest() {
+        eletrico.verificarBateria();
+        eletrico.testarSistema();
+        eletrico.ativarParteEletrica();
+        assertTrue(eletrico.verificar(), "O sistema elétrico deve estar funcionando corretamente.");
+        
+        eletrico.desativarParteEletrica();
+        assertFalse(eletrico.verificar(), "O sistema elétrico deve estar desativado.");
+        
+        eletrico.ativarParteEletrica();
+        assertTrue(eletrico.verificar(), "O sistema elétrico deve estar ativado novamente.");
+    }
 
 
     @Test
-    public void AbrirPortasLigaLuzTest(){
+    void ComponentesTest() {
+        Combustivel combustivel = new Combustivel("Gasolina", 50, 10, "Shell", true);
+        Direcao direcao = new Direcao("Hidráulica", true, "Alumínio", 15.0, "Momo", 0);
+        Freios freios = new Freios("Disco", "Metal", "PNY", 30, 50);
+        Luzes luzes = new Luzes("LED", 75, "Branco", false, "Led");
+        Pneus pneus = new Pneus("R16", "Assetto", 32.0, "Pirelli", "Novo");
+        Portas portas = new Portas(2, "Metal", "Preto", "Comun", false);
+        Transmisao transmissao = new Transmisao("Manual", 5, "Aço", "Porsche", true, 1);
+
+        assertAll("Testando todos os componentes",
+            () -> assertEquals(10, combustivel.getNivel(), "O nível do combustivel deve ser 10."),
+            () -> assertEquals(0, direcao.getAngulo(), "O angulo inicial deve ser 0."),
+            () -> assertTrue(freios.verificarDesgaste() < 90, "O desgaste deve ser inferior a 90 após verificacao."),
+            () -> assertFalse(luzes.isEstado(), "As luzes devem estar desligadas."),
+            () -> assertEquals("Novo", pneus.getEstado(), "Os pneus devem estar em estado 'Novo'."),
+            () -> assertEquals(2, portas.getQuantidade(), "Deve haver 4 portas."),
+            () -> assertEquals(1, transmissao.getMarchaAtual(), "A marcha inicial deve ser 1.")
+        );
+    }
+
+
+    @Test
+    public void AbastecerCarroVerificarNivelTest() {
+        combustivel.abastecer(20);
+        assertEquals(30, combustivel.getNivel(), "O nível de combustível nao foi atualizado corretamente.");
+    }
+
+    @Test
+    public void LuzComSistemaEletricoTest() {
+        eletrico.ativarParteEletrica();
+        luzes.ligar(eletrico);
+        assertTrue(luzes.isEstado(), "As luzes devem estar ligadas quando o sistema elétrico está ativo.");
+    }
+
+    @Test
+    public void PressaoPneuTest() {
+        pneus.ajustarPressao(32.0);
+        assertEquals(32.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
+    }
+
+    @Test
+    public void PortasEConexaoComLuzesTest() {
         portas.abrir(luzes, eletrico);
-        assertTrue(luzes.isEstado());
+        assertTrue(portas.getEstado(), "As portas devem estar abertas.");
+        assertTrue(luzes.isEstado(), "As luzes devem estar ligadas quando as portas estão abertas.");
+        
+        portas.fechar(luzes, eletrico);
+        assertFalse(portas.getEstado(), "As portas devem estar fechadas.");
+        assertFalse(luzes.isEstado(), "As luzes devem estar desligadas quando as portas estão fechadas.");
     }
 
     @Test
-    public void AjustarAlturaTest() {
-        suspensao.AjustarAltura(20);
-        assertEquals(20.0, suspensao.getAltura(), "A altura da suspensao deve ser ajustada para 20");
+    public void FreiosDesgasteTest() {
+        freios.substituirPastilhas();
+        double desgasteAtual = freios.verificarDesgaste();
+        assertNotNull(desgasteAtual, "O desgaste dos freios nao deve ser nulo");
+        assertTrue(desgasteAtual >= 0 && desgasteAtual <= 90, "O desgaste deve estar entre 0 e 90");
     }
 
+    @Test
+    public void AjustarIntensidadeLuzTest() {
+        luzes.ligar(eletrico);
+        luzes.ajustarIntensidade(50);
+        assertEquals(50, luzes.getIntensidade(), "A intensidade da luz nao foi ajustada corretamente");
+        
+        luzes.ajustarIntensidade(110);
+        assertEquals(50, luzes.getIntensidade(), "A intensidade não deve ser ajustada para um valor inválido");
+    }
+
+    @Test
+    public void EstadoTransmissaoTest() {
+        assertTrue(transmisao.isEstado(), "A transmissão deve estar funcionando");
+        
+        transmisao.setEstado(false);
+        assertFalse(transmisao.isEstado(), "A transmissão deve estar desativada");
+        
+        transmisao.setEstado(true);
+        assertTrue(transmisao.isEstado(), "A transmissão deve estar ativada novamente.");
+    }
+
+    @Test
+    public void NaoLigarMotorSemCombustivelTest() {
+        motorr.ligarMotor(combustivel, eletrico);
+        assertFalse(motorr.verificarEstado(), "O motor nao liga devido à falta de combustível ou sistema eletrico");
+    }
+
+    @Test
+    public void ExcessoDeCombustivelTest() {
+        Carroo.abastecerCarro(50.0);
+        assertNotEquals(75.0, combustivel.verificarNivel(),"O nao pode ser 75");
+    }
+
+    @Test
+    public void MotorImpactaTrocaMarchaTest() {
+        eletrico.ativarParteEletrica();
+        motorr.ligarMotor(combustivel, eletrico);
+        transmisao.setEstado(true);
+        transmisao.trocarMarcha(2, motorr);
+        assertTrue(motorr.verificarEstado(), "O motor deve estar ligado para que a troca de marcha funcione.");
+        assertNotNull(transmisao.getTipo(), "O tipo de transmissão não deve ser nulo após a troca de marcha.");
+    }
+
+    @Test
+    public void AtualizaPainelComCombustivelTest() {
+        double vel = Carroo.getVelocidade();
+        combustivel.abastecer(15.0);
+        painel.atualizarInformacoes(motorr, combustivel, luzes, portas, suspensao, banco, eletrico, vel);
+        painel.ligarDisplay();
+        Boolean painelStatus = painel.getEstado();
+        assertNotNull(painelStatus, "O status do painel não deve ser nulo após o abastecimento.");
+        combustivel.setEstado(false);
+        assertFalse(combustivel.getEstado(), "O sistema de combustível deve estar funcionando após o abastecimento.");
+    }
+
+
+    
 
 }

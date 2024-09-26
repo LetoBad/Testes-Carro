@@ -14,7 +14,7 @@ public class Main {
         Portas sistemaPortas = new Portas(2, "Fibra", "Vermelho", "Normal", false);
         SistemaEletrico sistemaEletrico = new SistemaEletrico(12, 90, "Litio", true, "Mora");
         Suspensao sistemaSuspensao = new Suspensao("Barra invertida", "Carbono", 20, 10, "Sparco", "Bom");
-        Transmisao transmissao = new Transmisao("Manual" , 6 , "Aluminio", "Porsche" , true);
+        Transmisao transmissao = new Transmisao("Manual" , 6 , "Aluminio", "Porsche" , true , 1);
 
 
         carro Carro = new carro(sistemaBanco , sistemaCombustivel, sistemaDirecao, sistemaFreios, sistemaLuzes, motor , sistemaPainel , sistemaPneus , sistemaPortas
