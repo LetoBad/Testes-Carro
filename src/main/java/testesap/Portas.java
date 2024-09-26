@@ -5,9 +5,9 @@ public class Portas {
 	private String material;
 	private String cor;
 	private String tipo;
-	private String estado;
+	private boolean estado;
 
-	public Portas(int quantidade, String material, String cor, String tipo, String estado) {
+	public Portas(int quantidade, String material, String cor, String tipo, boolean estado) {
 		this.quantidade = quantidade;
 		this.material = material;
 		this.cor = cor;
@@ -47,35 +47,33 @@ public class Portas {
 		this.tipo = tipo;
 	}
 
-	public String getEstado() {
+	public boolean  getEstado() {
 		return estado;
 	}
 
-	public void setEstado(String estado) {
+	public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
 	
-    public void abrir() {
-        if (!estado.equals("Aberta")) {
-            estado = "Aberta";
-            System.out.println("A porta foi aberta.");
-        } else {
-            System.out.println("A porta já está aberta.");
-        }
-    }
+    public void abrir(Luzes sistemaLuzes, SistemaEletrico sistemaEletrico ){
+		estado = true;
+		sistemaLuzes.ligar(sistemaEletrico);
+	}
 
+	public void fechar(Luzes sistemaLuzes, SistemaEletrico sistemaEletrico){
+		estado = false;
+		sistemaLuzes.desligaLuzes(sistemaEletrico);
+	}
     
-    public void fechar() {
-        if (!estado.equals("Fechada")) {
-            estado = "Fechada";
-            System.out.println("A porta foi fechada.");
-        } else {
-            System.out.println("A porta já está fechada.");
+    public String verificarEstado(){
+        if(estado==true) {
+            String FechadaAberta = "Porta aberta";
+            return FechadaAberta;
         }
-    }
+        else {
+            String FechadaAberta = "Porta fechada";
+            return FechadaAberta;
 
-    
-    public void verificarEstado() {
-        System.out.println("O estado atual das portas é: " + estado);
+        }
     }
 }

@@ -55,26 +55,30 @@ public class Luzes {
 		this.modelo = modelo;
 	}
 
-	public void ligar() {
-		if (!estado) {
-			estado = true;
-			System.out.println("As luzes foram ligadas.");
-		} else {
-			System.out.println("As luzes já estão ligadas.");
+
+	public void OnOff(boolean  estado , SistemaEletrico sistemaEletrico){
+		if(estado = true){
+			ligar(sistemaEletrico);
 		}
 	}
 
-	public void desligar() {
-		if (estado) {
-			estado = false;
-			System.out.println("As luzes foram desligadas.");
-		} else {
-			System.out.println("As luzes já estão desligadas.");
-		}
-	}
+	public void ligar(SistemaEletrico sistemaeletrico) {
+        if(sistemaeletrico.getVoltagem()>=12){
+            estado = true;
+            System.out.println("Luzes ligadas!");
+        }
+        else{
+            System.out.println("Nao foi possivel ligar");
+        }
+    }
+
+	public void desligaLuzes(SistemaEletrico sistemaEletrico) {
+        System.out.println("Luzes desligadas!");
+        estado = false;
+    }
 
 	public void ajustarIntensidade(int novaintensidade) {
-		if (novaintensidade >= 0 && novaintensidade <= 100) {
+		if (estado = true && novaintensidade >= 0 && novaintensidade <= 100) {
 			this.intensidade = novaintensidade;
 			System.out.println("A intensidade das luzes foi ajustada para: " + novaintensidade + "%.");
 		} else {

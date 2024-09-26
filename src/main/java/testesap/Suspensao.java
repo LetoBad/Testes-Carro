@@ -73,12 +73,19 @@ public class Suspensao {
 		this.altura = novaRigidez;
 	}
 
-	public void VerificaEstado() {
-		System.out.println("O estado é" + estado);
+	public String VerificaEstado() {
+		String estadoString = "Altura da suspensão: " + altura + ", Rigidez da suspensão: " + rigidez ;
+        return estadoString;
 	}
 
-	public void substituir() {
-		System.out.println("Suspenasão trocada");
+	public void substituir(String tipo, String material, double altura, int rigidez, String marca, String estado) {
+		this.tipo = tipo;
+		this.material = material;
+		this.altura = altura;
+		this.rigidez = rigidez;
+		this.marca = marca;
+		this.estado = estado;
+		System.out.println("Suspensao trocada");
 	}
 
 }

@@ -2,21 +2,13 @@ package testesap;
 
 public class Painel {
 
-	static Transmisao trans = new Transmisao(1, "Manual", 6, "Aluminio", "Porsche", true);
-
-	Luzes luzes = new Luzes("Farol", 10, "Branca", false, "LED");
-
-	Direcao direcao = new Direcao("Assistida", true, "Carbono", 2.7, "Momo", 0);
-
-
-
 	private String tipo;
 	private String display;
 	private boolean controle;
 	private String marca;
 	private boolean estado;
-	private int marcha;
 	private String pisca;
+	private String info;
 
 	public Painel(String tipo, String display, boolean controle, String marca, boolean estado , String pisca) {
 		this.tipo = tipo;
@@ -104,11 +96,14 @@ public class Painel {
 		this.pisca = pisca;
 	}
 
-	
+	public String getInfo() {
+		return info;
+	}
 
-    /*public String Painel(String string, Object object, boolean b, Object object2, boolean c) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Painel'");
-    }*/
+	public void setInfo(String info) {
+		this.info = info;
+	}
+
+
 }
 

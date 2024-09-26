@@ -1,29 +1,18 @@
 package testesap;
 
 public class Transmisao {
-        private int marchaAtual;
         private String tipo;
         private int numeroMarchas;
         private String material;
         private String marca;
         private boolean estado;
-        carro Carro = new carro(true , Math.random()*20);
     
-        public Transmisao(int marchaAtual, String tipo, int numeroMarchas, String material, String marca, boolean estado) {
-            this.marchaAtual = marchaAtual;
+        public Transmisao(String tipo, int numeroMarchas, String material, String marca, boolean estado) {
             this.tipo = tipo;
             this.numeroMarchas = numeroMarchas;
             this.material = material;
             this.marca = marca;
             this.estado = estado;
-        }
-    
-        public int getMarchaAtual() {
-            return marchaAtual;
-        }
-    
-        public void setMarchaAtual(int marchaAtual) {
-            this.marchaAtual = marchaAtual;
         }
     
         public String getTipo() {
@@ -65,51 +54,32 @@ public class Transmisao {
         public void setEstado(boolean estado) {
             this.estado = estado;
         }
-    
-        public void trocarMarcha(int marcha) {
-            if (marcha >= 1 && marcha <= numeroMarchas) {
-                this.marchaAtual = marcha;
-                System.out.println("Marcha trocada para: " + marchaAtual);
-            } else {
-                System.out.println("Marcha inválida. O sistema suporta até " + numeroMarchas + " marchas.");
-            }
-        }
-    
-        public void verificarEstado() {
-            if (estado) {
-                System.out.println("Transmissão funcionando corretamente.");
-            } else {
-                System.out.println("Transmissão inativa ou com defeito.");
-            }
-        }
-    
-        public void substituirComponente(String componente) {
-            System.out.println("Componente " + componente + " da transmissão substituído.");
-        }
-
-    
-        public void subirMarcha(){
-            if (marchaAtual <= numeroMarchas) {
-                marchaAtual = marchaAtual + 1;
-                System.out.println("Marcha atual: " + marchaAtual);
-                Carro.setVelocidade( Carro.getVelocidade() + Math.random()*20);
-                System.out.println("Velocidade atual : " + Carro.getVelocidade());
+        
+        public void verificarEstado(){
+            if(estado == true){
+                System.out.println("A transmissão está funcionando");
             }
             else{
-                System.out.println("Não é possivel subir mais marchas");
+                System.out.println("A transmissão não está funcionando");
             }
         }
 
-        public void baixarMarcha(){
-            if( marchaAtual >= 0 ){
-                marchaAtual = marchaAtual - 1;
-                System.out.println("Marcha atual: " + marchaAtual);
-                Carro.setVelocidade( Carro.getVelocidade()/1.5);
-                System.out.println("Velocidade atual : " + Carro.getVelocidade());
+
+        public void trocarMarcha(int marcha, Motor motor){
+            if(motor.verificarEstado() == true){
+                System.out.println("A marcha atual: " + marcha);
             }
             else{
-                System.out.println("Não é possivel baixar mais marchas");
+                System.out.println("O carro não está ligado.");
             }
+        }
+
+        public void substituir(String tipo, int numeroMarchas, String material, String marca, boolean estado) {
+            this.tipo = tipo;
+            this.numeroMarchas = numeroMarchas;
+            this.material = material;
+            this.marca = marca;
+            this.estado = estado;
         }
     
     }

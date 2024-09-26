@@ -68,13 +68,16 @@ public class SistemaEletrico {
     }
 
     
-    public void substituirBateria() {
-        tipoBateria = "nova";
-        capacidade = 100;
-        System.out.println("Bateria substituída. Capacidade atual: " + capacidade + "%.");
-    }
-
-  
+    public void substituirBateria(double voltagem, double capacidade, String tipoBateria, boolean estado, String marca) {
+		this.voltagem = voltagem;
+		this.capacidade = capacidade;
+		this.tipoBateria = tipoBateria;
+		this.estado = estado;
+		this.marca = marca;
+	
+		System.out.println("Bateria Trocada");
+	}
+	
     public void testarSistema() {
         if (estado) {
             System.out.println("Sistema elétrico está funcionando corretamente.");
@@ -82,5 +85,10 @@ public class SistemaEletrico {
             System.out.println("Sistema elétrico está desligado. Ligue para testar.");
         }
     }
+
+	public boolean verificar() {
+        return estado;
+    }
+
 }
 

@@ -56,13 +56,8 @@ public class Combustivel {
 	}
 	
 
-    public void verificarNivel() {
-        if (nivel <= 0) {
-            System.out.println("O tanque está vazio.");
-        } 
-        else {
-            System.out.println("O nível atual de combustível é: " + nivel + " litros.");
-        }
+    public double verificarNivel() {
+        return nivel;
     }
 
     
@@ -77,11 +72,13 @@ public class Combustivel {
         }
     }
 
-   
-    public void substituirTanque() {
-        this.nivel = 0;
-        System.out.println("O tanque de combustível foi substituído.");
-    }
+    public void substituirTanque(String tipo, double capacidade, double nivel, String marca, boolean estado) {
+		this.tipo = tipo;
+		this.capacidade = capacidade;
+		this.nivel = nivel;
+		this.marca = marca;
+		this.estado = estado;
+	}
 	
 
 }
