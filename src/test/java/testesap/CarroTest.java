@@ -95,7 +95,7 @@ public class CarroTest {
         assertTrue(luzes.isEstado(), "As luzes devem estar ligadas quando o sistema elétrico está ativo.");
     }
 
-    //nao
+    
     @Test
     public void PressaoPneuTest() {
         assertEquals(22.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
