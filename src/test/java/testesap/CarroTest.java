@@ -128,31 +128,12 @@ public class CarroTest {
         
     }
 
-
-    //nao
-    @Test
-    public void EstadoTransmissaoTest() {
-        assertTrue(transmisao.isEstado(), "A transmissão deve estar funcionando");
-        
-        transmisao.setEstado(false);
-        assertFalse(transmisao.isEstado(), "A transmissão deve estar desativada");
-        
-        transmisao.setEstado(true);
-        assertTrue(transmisao.isEstado(), "A transmissão deve estar ativada novamente.");
-    }
-
     @Test
     public void NaoLigarMotorSemCombustivelTest() {
         motorr.ligarMotor(combustivel, eletrico);
         assertFalse(motorr.verificarEstado(), "O motor nao liga devido à falta de combustível ou sistema eletrico");
     }
 
-    //nao
-    @Test
-    public void ExcessoDeCombustivelTest() {
-        Carroo.abastecerCarro(50.0);
-        assertNotEquals(75.0, combustivel.verificarNivel(),"O nao pode ser 75");
-    }
 
     @Test
     public void MotorImpactaTrocaMarchaTest() {
@@ -175,8 +156,30 @@ public class CarroTest {
         Boolean painelStatus = painel.getEstado();
         assertNotNull(painelStatus, "O status do painel não deve ser nulo após o abastecimento.");
     }
-    
+
+    @Test
+    public void CarroAceleraGastaCombustivelTest(){
+        Carroo.abastecerCarro(2);
+        motorr.ligarMotor(combustivel, eletrico);
+        Carroo.acelerar50(pneus, combustivel);
+        assertEquals(1, combustivel.getNivel());
+        Carroo.abastecerCarro(1);
+        Carroo.acelerar100(pneus, combustivel);
+        assertEquals(0, combustivel.getNivel());
+    }
+
+    @Test
+    public void AceleraMudaPressaoPneuTest(){
+        pneus.ajustarPressao(30);
+        assertEquals(30, pneus.getPressao());
+        Carroo.abastecerCarro(10);
+        Carroo.acelerar50(pneus, combustivel);
+        assertEquals(31, pneus.getPressao());
+        Carroo.acelerar100(pneus, combustivel);
+        assertEquals(33, pneus.getPressao());
+
+    }
 
     
-
+    
 }

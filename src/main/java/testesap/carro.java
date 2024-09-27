@@ -206,6 +206,22 @@ public class carro {
         SistemaLuzes.desligaLuzes(sistemaEletrico);
     }
 
+    public void acelerar50(Pneus sistemaPneus, Combustivel combustivel){
+        motor.ligarMotor(sistemaCombustivel, sistemaEletrico);
+        SistemaLuzes.ligar(sistemaEletrico);
+        sistemaPneus.setPressao(sistemaPneus.getPressao()+1);
+        combustivel.setNivel(combustivel.getNivel()-1);
+        velocidade = 49;
+    }
+
+    public void acelerar100(Pneus sistemaPneus, Combustivel combustivel){
+        motor.ligarMotor(sistemaCombustivel, sistemaEletrico);
+        SistemaLuzes.ligar(sistemaEletrico);
+        sistemaPneus.setPressao(sistemaPneus.getPressao()+2);
+        combustivel.setNivel(combustivel.getNivel()-2);
+        velocidade = 99;
+    }
+
 
     public String getModelo() {
         return modelo;
