@@ -20,6 +20,7 @@ public class CarroTest {
     private Motor motorr;
     private Painel painel;
     private Pneus pneus;
+    private Pneus pneusReserva;
     private Portas portas;
     private SistemaEletrico eletrico;
     private Suspensao suspensao;
@@ -42,6 +43,7 @@ public class CarroTest {
         transmisao = new Transmisao("Manual" , 6 , "Aluminio", "Porsche" , true , 2);
         luzesFreio = new LuzesFreio("Led", 0, "Vermelha", false, "Luz de freio");
         Carroo = new carro(banco, combustivel, direcao, freios, luzes, motorr, painel, pneus, portas, eletrico, suspensao, transmisao,luzesFreio ,"Porsche", 2019, "Branco", "Fak-2029", 10);
+        pneusReserva = new Pneus("19/15", "Corssa", 27.0, "Pirelli", "Bom");
     }
 
     @Test
@@ -180,6 +182,10 @@ public class CarroTest {
 
     }
 
+    @Test
+    public void PneuReservaTest(){
+        assertNotSame(pneus, pneusReserva , "Os pneus Nao sao os mesmos");
+    }
     
     
 }
