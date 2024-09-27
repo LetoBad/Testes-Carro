@@ -91,13 +91,9 @@ public class Freios {
 
 	
 	public void freiar(LuzesFreio luzesFreio , Pneus pneus ){
-		if (luzesFreio.getIntensidade()>0) {	
 			luzesFreio.setEstado(true);
-			pneus.setTemperatura(Math.random()*80);
 			pneus.setPressao(pneus.getPressao() + 1);
 			System.out.println(pneus.getPressao());
-		}
-		
 	}
 
 	public boolean isFreia() {

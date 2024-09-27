@@ -100,7 +100,7 @@ public class CarroTest {
     public void PressaoPneuTest() {
         assertEquals(22.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
         freios.freiar(luzesFreio, pneus);
-        assertEquals(22.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
+        assertEquals(23.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
     }
 
     @Test
