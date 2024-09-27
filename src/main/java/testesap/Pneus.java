@@ -6,6 +6,7 @@ public class Pneus {
 	private double pressao;
 	private String marca;
 	private String estado;
+	private double temperatura;
 
 	public Pneus(String tamanho, String tipo, double pressao, String marca, String estado) {
 		this.tamanho = tamanho;
@@ -75,5 +76,15 @@ public class Pneus {
 		this.marca = marca;
 		this.estado = estado;
 	}
+
+	public double getTemperatura() {
+		return temperatura;
+	}
+
+	public void setTemperatura(double temperatura) {
+		this.temperatura = temperatura;
+	}
+
+	
 
 }

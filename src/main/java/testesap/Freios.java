@@ -6,6 +6,7 @@ public class Freios {
 	private String marca;
 	private double tamanho;
 	private double desgaste;
+	private boolean freia;
 
 	public Freios(String tipo, String material, String marca, double tamanho, double desgaste) {
 		this.tipo = tipo;
@@ -86,4 +87,26 @@ public class Freios {
             System.out.println("Freio funcionando Bem");
         }
     }
+
+
+	
+	public void freiar(LuzesFreio luzesFreio , Pneus pneus ){
+		if (luzesFreio.getIntensidade()>0) {	
+			luzesFreio.setEstado(true);
+			pneus.setTemperatura(Math.random()*80);
+			pneus.setPressao(pneus.getPressao() + 1);
+			System.out.println(pneus.getPressao());
+		}
+		
+	}
+
+	public boolean isFreia() {
+		return freia;
+	}
+
+	public void setFreia(boolean freia) {
+		this.freia = freia;
+	}
+
+
 }

@@ -58,7 +58,7 @@ public class Motor {
 	}
 	
 	public void ligarMotor(Combustivel sistemacombustivel , SistemaEletrico sistemaEletrico){
-        if(sistemacombustivel.verificarNivel()>0 && sistemaEletrico.verificar() == true){
+        if(sistemacombustivel.verificarNivel()>0 && sistemaEletrico.getVoltagem() >= 12){
             estado = true;
             System.out.println("Motor Ligado!");
             

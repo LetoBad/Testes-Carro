@@ -1,13 +1,13 @@
 package testesap;
 
-public class Luzes {
-	private String tipo;
+public class LuzesFreio {
+    private String tipo;
 	private int intensidade;
 	private String cor;
 	private boolean estado;
 	private String modelo;
 
-	public Luzes(String tipo, int intensidade, String cor, boolean estado, String modelo) {
+	public LuzesFreio(String tipo, int intensidade, String cor, boolean estado, String modelo) {
 		this.tipo = tipo;
 		this.intensidade = intensidade;
 		this.cor = cor;
@@ -56,27 +56,6 @@ public class Luzes {
 	}
 
 
-	public void OnOff(boolean  estado , SistemaEletrico sistemaEletrico){
-		if(estado = true){
-			ligar(sistemaEletrico);
-		}
-	}
-
-	public void ligar(SistemaEletrico sistemaeletrico) {
-        if(sistemaeletrico.getVoltagem()>=12){
-            estado = true;
-            System.out.println("Luzes ligadas!");
-        }
-        else{
-            System.out.println("Nao foi possivel ligar");
-        }
-    }
-
-	public void desligaLuzes(SistemaEletrico sistemaEletrico) {
-        System.out.println("Luzes desligadas!");
-        estado = false;
-    }
-
 	public void ajustarIntensidade(int novaintensidade , SistemaEletrico sistemaEletrico) {
 		if (estado = true && novaintensidade >= 0 && novaintensidade <= 100 && sistemaEletrico.getVoltagem() >=12) {
 			this.intensidade = novaintensidade;
@@ -86,5 +65,7 @@ public class Luzes {
 		}
 	}
 
-}
 
+
+
+}

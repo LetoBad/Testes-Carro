@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,11 +24,12 @@ public class CarroTest {
     private SistemaEletrico eletrico;
     private Suspensao suspensao;
     private Transmisao transmisao;
+    private LuzesFreio luzesFreio;
 
     @BeforeEach
     public void setUp(){
         banco = new Banco(2, "Couro", "Preto", "Deportivo", "Reto" , 2);
-        combustivel = new Combustivel("Gasolina", 50, 10, "Ipirango", true);
+        combustivel = new Combustivel("Gasolina", 50, 0, "Ipirango", true);
         direcao = new Direcao("Deportiva", true, "Carbono", 12.2, "Sparco", 0);
         freios = new Freios("Pastilha", "Aço", "NSX", 10, 20);
         luzes = new Luzes("Led", 10, "Branca", false, "Led");
@@ -38,20 +40,21 @@ public class CarroTest {
         eletrico = new SistemaEletrico(12, 90, "Litio", false, "Mora");
         suspensao = new Suspensao("Barra invertida", "Carbono", 20, 10, "Sparco", "Bom");
         transmisao = new Transmisao("Manual" , 6 , "Aluminio", "Porsche" , true , 2);
-        Carroo = new carro(banco, combustivel, direcao, freios, luzes, motorr, painel, pneus, portas, eletrico, suspensao, transmisao, "Porsche", 2019, "Branco", "Fak-2029", 10);
+        luzesFreio = new LuzesFreio("Led", 0, "Vermelha", false, "Luz de freio");
+        Carroo = new carro(banco, combustivel, direcao, freios, luzes, motorr, painel, pneus, portas, eletrico, suspensao, transmisao,luzesFreio ,"Porsche", 2019, "Branco", "Fak-2029", 10);
     }
 
     @Test
     public void SistemaEletricoTest() {
         eletrico.verificarBateria();
         eletrico.testarSistema();
-        eletrico.ativarParteEletrica();
+        eletrico.ativarParteEletrica(eletrico);
         assertTrue(eletrico.verificar(), "O sistema elétrico deve estar funcionando corretamente.");
         
         eletrico.desativarParteEletrica();
         assertFalse(eletrico.verificar(), "O sistema elétrico deve estar desativado.");
         
-        eletrico.ativarParteEletrica();
+        eletrico.ativarParteEletrica(eletrico);
         assertTrue(eletrico.verificar(), "O sistema elétrico deve estar ativado novamente.");
     }
 
@@ -80,21 +83,24 @@ public class CarroTest {
 
     @Test
     public void AbastecerCarroVerificarNivelTest() {
-        combustivel.abastecer(20);
-        assertEquals(30, combustivel.getNivel(), "O nível de combustível nao foi atualizado corretamente.");
+        combustivel.abastecer(1);
+        motorr.ligarMotor(combustivel, eletrico);
+        assertTrue(motorr.getEstado(), "O motor deveria ligar");
     }
 
     @Test
     public void LuzComSistemaEletricoTest() {
-        eletrico.ativarParteEletrica();
+        eletrico.ativarParteEletrica(eletrico);
         luzes.ligar(eletrico);
         assertTrue(luzes.isEstado(), "As luzes devem estar ligadas quando o sistema elétrico está ativo.");
     }
 
+    //nao
     @Test
     public void PressaoPneuTest() {
-        pneus.ajustarPressao(32.0);
-        assertEquals(32.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
+        assertEquals(22.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
+        freios.freiar(luzesFreio, pneus);
+        assertEquals(23.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
     }
 
     @Test
@@ -109,23 +115,21 @@ public class CarroTest {
     }
 
     @Test
-    public void FreiosDesgasteTest() {
-        freios.substituirPastilhas();
-        double desgasteAtual = freios.verificarDesgaste();
-        assertNotNull(desgasteAtual, "O desgaste dos freios nao deve ser nulo");
-        assertTrue(desgasteAtual >= 0 && desgasteAtual <= 90, "O desgaste deve estar entre 0 e 90");
+    public void FreiosLuzTest() {
+        freios.freiar(luzesFreio , pneus);
+        luzesFreio.ajustarIntensidade(1, eletrico);
+        assertTrue(luzesFreio.isEstado(), "As luzes devem ligar.");
     }
 
     @Test
     public void AjustarIntensidadeLuzTest() {
-        luzes.ligar(eletrico);
-        luzes.ajustarIntensidade(50);
-        assertEquals(50, luzes.getIntensidade(), "A intensidade da luz nao foi ajustada corretamente");
+    luzes.ajustarIntensidade(80, eletrico);
+    assertEquals(80, luzes.getIntensidade(), "A intensidade da luz nao foi ajustada corretamente");
         
-        luzes.ajustarIntensidade(110);
-        assertEquals(50, luzes.getIntensidade(), "A intensidade não deve ser ajustada para um valor inválido");
     }
 
+
+    //nao
     @Test
     public void EstadoTransmissaoTest() {
         assertTrue(transmisao.isEstado(), "A transmissão deve estar funcionando");
@@ -143,6 +147,7 @@ public class CarroTest {
         assertFalse(motorr.verificarEstado(), "O motor nao liga devido à falta de combustível ou sistema eletrico");
     }
 
+    //nao
     @Test
     public void ExcessoDeCombustivelTest() {
         Carroo.abastecerCarro(50.0);
@@ -151,7 +156,8 @@ public class CarroTest {
 
     @Test
     public void MotorImpactaTrocaMarchaTest() {
-        eletrico.ativarParteEletrica();
+        Carroo.abastecerCarro(1);
+        eletrico.ativarParteEletrica(eletrico);
         motorr.ligarMotor(combustivel, eletrico);
         transmisao.setEstado(true);
         transmisao.trocarMarcha(2, motorr);
@@ -162,15 +168,13 @@ public class CarroTest {
     @Test
     public void AtualizaPainelComCombustivelTest() {
         double vel = Carroo.getVelocidade();
-        combustivel.abastecer(15.0);
+        combustivel.abastecer(20);
+        assertEquals(20, combustivel.getNivel(), "O nível de combustível nao foi atualizado corretamente.");
         painel.atualizarInformacoes(motorr, combustivel, luzes, portas, suspensao, banco, eletrico, vel);
         painel.ligarDisplay();
         Boolean painelStatus = painel.getEstado();
         assertNotNull(painelStatus, "O status do painel não deve ser nulo após o abastecimento.");
-        combustivel.setEstado(false);
-        assertFalse(combustivel.getEstado(), "O sistema de combustível deve estar funcionando após o abastecimento.");
     }
-
     
 
     

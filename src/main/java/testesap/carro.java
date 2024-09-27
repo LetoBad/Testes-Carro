@@ -13,6 +13,7 @@ public class carro {
     private SistemaEletrico sistemaEletrico;
     private Suspensao sistemaSuspensao;
     private Transmisao Transmissao;
+    private LuzesFreio luzesFreio;
     private String modelo;
     private int ano;
     private String cor;
@@ -21,20 +22,24 @@ public class carro {
     
     public carro(Banco sistemaBanco, Combustivel sistemaCombustivel, Direcao sistemaDirecao, Freios sistemaFreios,
             Luzes sistemaLuzes, Motor motor, Painel sistemaPainel, Pneus sistemaPneus, Portas sistemaPortas,
-            SistemaEletrico sistemaEletrico, Suspensao sistemaSuspensao, Transmisao transmissao, String modelo, int ano,
+            SistemaEletrico sistemaEletrico, Suspensao sistemaSuspensao, Transmisao transmissao, LuzesFreio luzesFreio , String modelo, int ano,
             String cor, String placa, double velocidade) {
         this.sistemaBanco = sistemaBanco;
         this.sistemaCombustivel = sistemaCombustivel;
         this.sistemaDirecao = sistemaDirecao;
         this.sistemaFreios = sistemaFreios;
-        SistemaLuzes = sistemaLuzes;
+        //abajo
+        this.SistemaLuzes = sistemaLuzes;
         this.motor = motor;
         this.sistemaPainel = sistemaPainel;
-        SistemaPneus = sistemaPneus;
+        //abajo
+        this.SistemaPneus = sistemaPneus;
         this.sistemaPortas = sistemaPortas;
         this.sistemaEletrico = sistemaEletrico;
         this.sistemaSuspensao = sistemaSuspensao;
-        Transmissao = transmissao;
+        //abajo
+        this.Transmissao = transmissao;
+        this.luzesFreio = luzesFreio;
         this.modelo = modelo;
         this.ano = ano;
         this.cor = cor;
@@ -105,8 +110,8 @@ public class carro {
         SistemaLuzes.OnOff(estado, sistemaEletrico);
     }
 
-    public void ajustarIntensidade(int novaIntensidade){
-        SistemaLuzes.ajustarIntensidade(novaIntensidade);
+    public void ajustarIntensidade(int novaIntensidade , SistemaEletrico eletrico){
+        SistemaLuzes.ajustarIntensidade(novaIntensidade, eletrico);
     }
 
     

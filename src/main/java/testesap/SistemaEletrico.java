@@ -55,10 +55,13 @@ public class SistemaEletrico {
 		this.marca = marca;
 	}
 
-	public void ativarParteEletrica() {
-		System.out.println("Sistema eletrico ativado.");
+	public void ativarParteEletrica(SistemaEletrico eletrico) {
+		if(eletrico.getVoltagem() >= 12){
+			System.out.println("Sistema eletrico ativado.");
 		estado = true;
 	}
+		}
+		
 
 	public void desativarParteEletrica() {
 		System.out.println("Sistema eletrico ativado.");
