@@ -45,7 +45,7 @@ public class Main {
         sistemaLuzes.ligar(sistemaEletrico);*/
 
         motor.ligarMotor(sistemaCombustivel, sistemaEletrico);
-        sistemaFreios.freiar(luzesFreio, sistemaPneus);
+        sistemaFreios.freiar(luzesFreio, sistemaPneus, sistemaSuspensao);
 
     }
 }

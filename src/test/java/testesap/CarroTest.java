@@ -101,7 +101,7 @@ public class CarroTest {
     @Test
     public void PressaoPneuTest() {
         assertEquals(22.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
-        freios.freiar(luzesFreio, pneus);
+        freios.freiar(luzesFreio, pneus, suspensao);
         assertEquals(23.0, pneus.getPressao(), "A pressao do pneu nao foi ajustada corretamente.");
     }
 
@@ -118,7 +118,7 @@ public class CarroTest {
 
     @Test
     public void FreiosLuzTest() {
-        freios.freiar(luzesFreio , pneus);
+        freios.freiar(luzesFreio , pneus, suspensao);
         luzesFreio.ajustarIntensidade(1, eletrico);
         assertTrue(luzesFreio.isEstado(), "As luzes devem ligar.");
     }
@@ -185,6 +185,14 @@ public class CarroTest {
     @Test
     public void PneuReservaTest(){
         assertNotSame(pneus, pneusReserva , "Os pneus Nao sao os mesmos");
+    }
+
+    @Test
+    public void FreiaDesceSuspensaoTest(){
+        suspensao.AjustarAltura(10);
+        assertEquals(10, suspensao.getAltura());
+        freios.freiar(luzesFreio, pneus, suspensao);
+        assertEquals(9, suspensao.getAltura());
     }
     
     

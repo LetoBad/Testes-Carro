@@ -90,10 +90,11 @@ public class Freios {
 
 
 	
-	public void freiar(LuzesFreio luzesFreio , Pneus pneus ){
+	public void freiar(LuzesFreio luzesFreio , Pneus pneus , Suspensao suspensao){
 			luzesFreio.setEstado(true);
 			pneus.setPressao(pneus.getPressao() + 1);
 			System.out.println(pneus.getPressao());
+			suspensao.setAltura(suspensao.getAltura()-1);
 	}
 
 	public boolean isFreia() {
