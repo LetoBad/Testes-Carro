@@ -194,6 +194,8 @@ public class CarroTest {
         freios.freiar(luzesFreio, pneus, suspensao);
         assertEquals(9, suspensao.getAltura());
     }
+
+    
     
     
 }
