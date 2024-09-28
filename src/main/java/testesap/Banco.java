@@ -7,6 +7,8 @@ public class Banco {
     private String tipo;
     private String estado;
     private double altura;
+    private double temperatura;
+
     public Banco(int quantidade, String material, String cor, String tipo, String estado, double altura) {
         this.quantidade = quantidade;
         this.material = material;
@@ -15,7 +17,7 @@ public class Banco {
         this.estado = estado;
         this.altura = altura;
     }
-    
+
     public int getQuantidade() {
         return quantidade;
     }
@@ -53,7 +55,7 @@ public class Banco {
     }
 
     public void setEstado(double var) {
-        
+
         if (var < 2.5) {
             estado = "O banco está inclinado 90º";
         }
@@ -75,8 +77,6 @@ public class Banco {
     public void setAltura(double altura) {
         this.altura = altura;
     }
-
-    
 
     public void ajustarEncosto(String posicao) {
         if (posicao.equalsIgnoreCase("reto") || posicao.equalsIgnoreCase("inclinada")) {
@@ -101,6 +101,19 @@ public class Banco {
         System.out.println("O estado atual dos bancos é: " + estado);
     }
 
-    
-    
+    public void esquentarbanco(SistemaEletrico sistemaEletrico, double temp) {
+        if (sistemaEletrico.getVoltagem() >= 12) {
+            double temper = temp;
+            setTemperatura(temper);
+        }
+    }
+
+    public double getTemperatura() {
+        return temperatura;
+    }
+
+    public void setTemperatura(double temperatura) {
+        this.temperatura = temperatura;
+    }
+
 }

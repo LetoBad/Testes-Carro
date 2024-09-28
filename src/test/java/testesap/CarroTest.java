@@ -3,7 +3,6 @@ package testesap;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -193,6 +192,26 @@ public class CarroTest {
         assertEquals(10, suspensao.getAltura());
         freios.freiar(luzesFreio, pneus, suspensao);
         assertEquals(9, suspensao.getAltura());
+    }
+
+    @Test
+    public void BancoEsquentatest(){
+            banco.esquentarbanco(eletrico, 20);
+            assertEquals(20, banco.getTemperatura());
+            banco.esquentarbanco(eletrico, 23);
+            assertEquals(23, banco.getTemperatura());
+    }
+
+    @Test
+    public void AtivarModoPilotoAutomaticoTest(){
+        direcao.AtivarModoPilotoAutomatico(eletrico);
+        assertTrue(direcao.isAutomatico());
+    }
+
+    @Test
+    public void DestivarModoPilotoAutomaticoTest(){
+        direcao.DesativarModoPilotoAutomatico(eletrico);
+        assertFalse(direcao.isAutomatico());
     }
 
     
