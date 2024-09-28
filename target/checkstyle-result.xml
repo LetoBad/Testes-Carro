@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.45.1">
+<file name="E:\Estudio\testesAPP\TestesAp VSCODE\Testes-Carro\src\main\java\testesap\Alarma.java">
+<error line="3" column="1" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="4" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="20" column="5" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="20" column="17" severity="error" message="Method name &apos;LigarAlarma&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="20" column="61" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="20" column="80" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="21" column="9" severity="error" message="&apos;if&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="21" column="41" severity="error" message="&apos;&gt;=&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="21" column="41" severity="error" message="&apos;&gt;=&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="21" column="43" severity="error" message="&apos;12&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="21" column="74" severity="error" message="&apos;&gt;&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="21" column="74" severity="error" message="&apos;&gt;&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="21" column="77" severity="error" message="&apos;)&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+<error line="21" column="78" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="26" column="5" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="26" column="17" severity="error" message="Method name &apos;DesligarAlarma&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="26" column="64" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="26" column="83" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="27" column="13" severity="error" message="&apos;if&apos; tem um nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="27" column="42" severity="error" message="&apos;&gt;&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="27" column="42" severity="error" message="&apos;&gt;&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="28" column="17" severity="error" message="O filho de &apos;if&apos; está no nível de indentação incorreto de 16. O nível esperado era o 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="29" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="29" column="13" severity="error" message="&apos;if rcurly&apos; tem um nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="32" column="5" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="32" column="61" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="32" column="84" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="33" column="9" severity="error" message="&apos;if&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="33" column="39" severity="error" message="&apos;==&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="33" column="39" severity="error" message="A expressão pode ser simplicada." source="com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheck"/>
+<error line="33" column="75" severity="error" message="&apos;==&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="33" column="75" severity="error" message="A expressão pode ser simplicada." source="com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheck"/>
+<error line="33" column="83" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="37" column="5" severity="error" message="&apos;}&apos; é sucedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+</file>
 <file name="E:\Estudio\testesAPP\TestesAp VSCODE\Testes-Carro\src\main\java\testesap\Banco.java">
 <error line="1" severity="error" message="O arquivo não termina com uma linha em branco." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="3" column="1" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
@@ -25,85 +61,99 @@
 <error line="8" column="19" severity="error" message="O nome &apos;SistemaLuzes&apos; deve condizer com o padrão &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
 <error line="11" column="19" severity="error" message="O nome &apos;SistemaPneus&apos; deve condizer com o padrão &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
 <error line="15" column="24" severity="error" message="O nome &apos;Transmissao&apos; deve condizer com o padrão &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="22" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="23" column="5" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="23" column="12" severity="error" message="Existe mais do que 7 parâmetros (encontrado 18)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
-<error line="25" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 144)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="25" column="120" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="50" column="22" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="51" column="50" severity="error" message="&apos;120&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="54" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="56" column="5" severity="error" message="&apos;//&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="57" column="54" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="66" column="52" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="71" column="48" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="75" column="109" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="79" column="33" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="83" column="5" severity="error" message="&apos;METHOD_DEF&apos; deve ser separado da linha anterior." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="83" column="46" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="87" column="41" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="91" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 139)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="91" column="139" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="96" column="50" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="100" column="37" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="104" column="36" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="109" column="45" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="113" column="56" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="113" column="83" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="117" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="118" column="5" severity="error" message="&apos;//&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="119" column="39" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="124" column="31" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="128" column="34" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="133" column="105" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="137" column="35" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="141" column="47" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="146" column="29" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="147" column="42" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="150" column="30" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="154" column="39" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="159" column="35" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="163" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 123)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="167" column="40" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="171" column="6" severity="error" message="O comentário tem nível de indentação incorreto de 5. O nível esperado era o 4. O indentação deverá ser no mesmo nível que a linha 172." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
-<error line="172" column="54" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="176" column="43" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="180" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 123)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="180" column="123" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="185" column="45" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="189" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 128)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="193" column="41" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="196" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="198" column="5" severity="error" message="&apos;//&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="199" column="24" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="204" column="27" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="209" column="5" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="209" column="72" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="212" column="58" severity="error" message="&apos;+&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="212" column="58" severity="error" message="&apos;+&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="213" column="52" severity="error" message="&apos;-&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="213" column="52" severity="error" message="&apos;-&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="214" column="22" severity="error" message="&apos;49&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="217" column="5" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="217" column="73" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="220" column="58" severity="error" message="&apos;+&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="220" column="58" severity="error" message="&apos;+&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="221" column="52" severity="error" message="&apos;-&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="221" column="52" severity="error" message="&apos;-&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="222" column="22" severity="error" message="&apos;99&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="226" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="231" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="236" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="241" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="246" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="251" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="256" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="261" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="266" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="271" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="273" column="5" severity="error" message="&apos;}&apos; é sucedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="277" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="278" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="24" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="25" column="5" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="25" column="12" severity="error" message="Existe mais do que 7 parâmetros (encontrado 20)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="27" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 183)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="27" column="140" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="27" column="159" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="54" column="22" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="55" column="50" severity="error" message="&apos;120&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="58" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="60" column="5" severity="error" message="&apos;//&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="61" column="54" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="70" column="52" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="75" column="48" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="79" column="109" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="83" column="33" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="87" column="5" severity="error" message="&apos;METHOD_DEF&apos; deve ser separado da linha anterior." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="87" column="46" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="91" column="41" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="95" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 139)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="95" column="139" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="100" column="50" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="104" column="37" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="108" column="36" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="113" column="45" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="117" column="56" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="117" column="83" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="121" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="122" column="5" severity="error" message="&apos;//&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="123" column="39" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="128" column="31" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="132" column="34" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="137" column="105" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="141" column="35" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="145" column="47" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="150" column="29" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="151" column="42" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="154" column="30" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="158" column="39" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="163" column="35" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="167" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 123)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="171" column="40" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="175" column="6" severity="error" message="O comentário tem nível de indentação incorreto de 5. O nível esperado era o 4. O indentação deverá ser no mesmo nível que a linha 176." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="176" column="54" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="180" column="43" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="184" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 123)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="184" column="123" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="189" column="45" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="193" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 128)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="197" column="41" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="200" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="202" column="5" severity="error" message="&apos;//&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="203" column="24" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="208" column="27" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="213" column="5" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="213" column="72" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="216" column="58" severity="error" message="&apos;+&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="216" column="58" severity="error" message="&apos;+&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="217" column="52" severity="error" message="&apos;-&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="217" column="52" severity="error" message="&apos;-&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="218" column="22" severity="error" message="&apos;49&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="221" column="5" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="221" column="73" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="224" column="58" severity="error" message="&apos;+&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="224" column="58" severity="error" message="&apos;+&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="225" column="52" severity="error" message="&apos;-&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="225" column="52" severity="error" message="&apos;-&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="226" column="22" severity="error" message="&apos;99&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="230" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="235" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="240" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="245" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="250" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="255" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="260" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="265" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="270" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="275" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="277" column="5" severity="error" message="&apos;}&apos; é sucedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="281" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="282" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="E:\Estudio\testesAPP\TestesAp VSCODE\Testes-Carro\src\main\java\testesap\ChaveCarro.java">
+<error line="3" column="1" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="4" column="20" severity="error" message="O nome &apos;Capacidadepila&apos; deve condizer com o padrão &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
+<error line="14" column="5" severity="error" message="Definição de construtor em ordem errada." source="com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"/>
+<error line="18" column="17" severity="error" message="Method name &apos;ControleLigaAlarma&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="18" column="35" severity="error" message="&apos;(&apos; está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+<error line="18" column="68" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="18" column="88" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="22" column="17" severity="error" message="Method name &apos;ControleDesligaAlarma&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="22" column="38" severity="error" message="&apos;(&apos; está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+<error line="22" column="71" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="22" column="91" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
 <file name="E:\Estudio\testesAPP\TestesAp VSCODE\Testes-Carro\src\main\java\testesap\Combustivel.java">
 <error line="3" column="1" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
@@ -562,27 +612,35 @@
 <error line="17" column="86" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
 <error line="17" column="93" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
 <error line="18" column="55" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="21" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 164)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="21" column="15" severity="error" message="O nome &apos;Carro&apos; deve condizer com o padrão &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
-<error line="21" column="46" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="21" column="119" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="21" column="135" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="21" column="150" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="22" column="9" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="22" column="9" severity="error" message="&apos;,&apos; tem um nível de indentação incorreto de 8. O nível esperado era o 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="22" column="27" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="20" column="43" severity="error" message="&apos;80&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="22" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 164)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="22" column="15" severity="error" message="O nome &apos;Carro&apos; deve condizer com o padrão &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
 <error line="22" column="46" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="22" column="60" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="22" column="60" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
-<error line="22" column="72" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="22" column="84" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="22" column="86" severity="error" message="&apos;2019&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="22" column="91" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="22" column="102" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="22" column="115" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="22" column="119" severity="error" message="&apos;)&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
-<error line="24" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="25" column="8" severity="error" message="O comentário de bloco tem um nível de indentação incorreto de 7. O nível esperado era o 8. O indentação deverá ser no mesmo nível que a linha 47." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="22" column="119" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="22" column="135" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="22" column="150" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 141)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="23" column="9" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="9" severity="error" message="&apos;,&apos; tem um nível de indentação incorreto de 8. O nível esperado era o 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="23" column="27" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="46" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="60" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="60" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="23" column="72" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="72" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="23" column="86" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="86" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="23" column="93" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="105" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="107" severity="error" message="&apos;2019&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="23" column="112" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="123" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="136" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="23" column="140" severity="error" message="&apos;)&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+<error line="25" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="26" column="30" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="35" column="30" severity="error" message="&apos;30&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="37" column="34" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
 <file name="E:\Estudio\testesAPP\TestesAp VSCODE\Testes-Carro\src\main\java\testesap\Motor.java">
 <error line="3" column="1" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
@@ -1074,109 +1132,117 @@
 <error line="9" column="1" severity="error" message="Ordem errada para a importação &apos;org.junit.jupiter.api.BeforeEach&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
 <error line="12" column="1" severity="error" message="Falta o comentário Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 <error line="13" column="19" severity="error" message="O nome &apos;Carroo&apos; deve condizer com o padrão &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="30" column="24" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="31" column="68" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="32" column="51" severity="error" message="&apos;50&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="33" column="61" severity="error" message="&apos;12.2&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="34" column="55" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="34" column="59" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="35" column="34" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="36" column="37" severity="error" message="&apos;1000&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="36" column="43" severity="error" message="&apos;12.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="38" column="47" severity="error" message="&apos;22.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="40" column="40" severity="error" message="&apos;12&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="40" column="44" severity="error" message="&apos;90&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="41" column="65" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="41" column="69" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="42" column="46" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="42" column="48" severity="error" message="&apos;6&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="42" column="50" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="42" column="74" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="42" column="81" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="44" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 189)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="44" column="134" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
-<error line="44" column="146" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="44" column="146" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
-<error line="44" column="158" severity="error" message="&apos;2019&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="44" column="186" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="45" column="53" severity="error" message="&apos;27.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="49" column="17" severity="error" message="Method name &apos;SistemaEletricoTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="54" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="57" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="63" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="64" column="10" severity="error" message="Method name &apos;ComponentesTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="65" column="21" severity="error" message="&apos;combustivel&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="65" column="63" severity="error" message="&apos;50&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="65" column="67" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="66" column="17" severity="error" message="&apos;direcao&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="66" column="71" severity="error" message="&apos;15.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="67" column="16" severity="error" message="&apos;freios&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="67" column="61" severity="error" message="&apos;30&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="67" column="65" severity="error" message="&apos;50&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="68" column="15" severity="error" message="&apos;luzes&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="68" column="40" severity="error" message="&apos;75&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="69" column="15" severity="error" message="&apos;pneus&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="69" column="51" severity="error" message="&apos;32.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="70" column="16" severity="error" message="&apos;portas&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="71" column="59" severity="error" message="&apos;5&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="74" column="32" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="76" column="59" severity="error" message="&apos;90&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="85" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="86" column="17" severity="error" message="Method name &apos;AbastecerCarroVerificarNivelTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="93" column="17" severity="error" message="Method name &apos;LuzComSistemaEletricoTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="99" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="100" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="101" column="17" severity="error" message="Method name &apos;PressaoPneuTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="102" column="22" severity="error" message="&apos;22.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="104" column="22" severity="error" message="&apos;23.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="108" column="17" severity="error" message="Method name &apos;PortasEConexaoComLuzesTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="112" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="119" column="17" severity="error" message="Method name &apos;FreiosLuzTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="120" column="34" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="126" column="17" severity="error" message="Method name &apos;AjustarIntensidadeLuzTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="127" column="5" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 4. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="127" column="30" severity="error" message="&apos;80&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="128" column="5" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 4. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="128" column="18" severity="error" message="&apos;80&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="129" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="133" column="17" severity="error" message="Method name &apos;NaoLigarMotorSemCombustivelTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="139" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="140" column="17" severity="error" message="Method name &apos;MotorImpactaTrocaMarchaTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="151" column="17" severity="error" message="Method name &apos;AtualizaPainelComCombustivelTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="153" column="31" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="154" column="22" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="162" column="17" severity="error" message="Method name &apos;CarroAceleraGastaCombustivelTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="162" column="51" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="173" column="17" severity="error" message="Method name &apos;AceleraMudaPressaoPneuTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="173" column="45" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="174" column="30" severity="error" message="&apos;30&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="175" column="22" severity="error" message="&apos;30&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="176" column="31" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="178" column="22" severity="error" message="&apos;31&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="180" column="22" severity="error" message="&apos;33&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="185" column="17" severity="error" message="Method name &apos;PneuReservaTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="185" column="34" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="186" column="43" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
-<error line="190" column="17" severity="error" message="Method name &apos;FreiaDesceSuspensaoTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="190" column="42" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="191" column="33" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="192" column="22" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="194" column="22" severity="error" message="&apos;9&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="198" column="17" severity="error" message="Method name &apos;BancoEsquentatest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="198" column="36" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="199" column="13" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="199" column="44" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="200" column="13" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="200" column="26" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="201" column="13" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="201" column="44" severity="error" message="&apos;23&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="202" column="13" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="202" column="26" severity="error" message="&apos;23&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="206" column="17" severity="error" message="Method name &apos;AtivarModoPilotoAutomaticoTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="206" column="49" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="209" column="5" severity="error" message="&apos;}&apos; é sucedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="211" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="212" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="213" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="32" column="24" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="33" column="68" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="34" column="51" severity="error" message="&apos;50&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="35" column="61" severity="error" message="&apos;12.2&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="36" column="55" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="36" column="59" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="37" column="34" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="38" column="37" severity="error" message="&apos;1000&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="38" column="43" severity="error" message="&apos;12.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="40" column="47" severity="error" message="&apos;22.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="42" column="40" severity="error" message="&apos;12&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="42" column="44" severity="error" message="&apos;90&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="43" column="65" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="43" column="69" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="44" column="46" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="44" column="48" severity="error" message="&apos;6&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="44" column="50" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="44" column="74" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="44" column="81" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="48" severity="error" message="A linha contém mais do que 120 caracteres (foram encontrados 206)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="48" column="134" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="48" column="146" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="48" column="155" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="48" column="163" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="48" column="163" severity="error" message="&apos;,&apos; não está seguido de espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="48" column="175" severity="error" message="&apos;2019&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="48" column="203" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="49" column="53" severity="error" message="&apos;27.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="53" column="17" severity="error" message="Method name &apos;SistemaEletricoTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="58" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="61" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="67" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="68" column="10" severity="error" message="Method name &apos;ComponentesTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="69" column="21" severity="error" message="&apos;combustivel&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="69" column="63" severity="error" message="&apos;50&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="69" column="67" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="70" column="17" severity="error" message="&apos;direcao&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="70" column="71" severity="error" message="&apos;15.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="71" column="16" severity="error" message="&apos;freios&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="71" column="61" severity="error" message="&apos;30&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="71" column="65" severity="error" message="&apos;50&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="72" column="15" severity="error" message="&apos;luzes&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="72" column="40" severity="error" message="&apos;75&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="73" column="15" severity="error" message="&apos;pneus&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="73" column="51" severity="error" message="&apos;32.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="74" column="16" severity="error" message="&apos;portas&apos; esconde um campo." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="75" column="59" severity="error" message="&apos;5&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="78" column="32" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="80" column="59" severity="error" message="&apos;90&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="89" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="90" column="17" severity="error" message="Method name &apos;AbastecerCarroVerificarNivelTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="97" column="17" severity="error" message="Method name &apos;LuzComSistemaEletricoTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="103" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="104" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="105" column="17" severity="error" message="Method name &apos;PressaoPneuTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="106" column="22" severity="error" message="&apos;22.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="108" column="22" severity="error" message="&apos;23.0&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="112" column="17" severity="error" message="Method name &apos;PortasEConexaoComLuzesTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="116" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="123" column="17" severity="error" message="Method name &apos;FreiosLuzTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="124" column="34" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="130" column="17" severity="error" message="Method name &apos;AjustarIntensidadeLuzTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="131" column="5" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 4. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="131" column="30" severity="error" message="&apos;80&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="132" column="5" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 4. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="132" column="18" severity="error" message="&apos;80&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="133" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="137" column="17" severity="error" message="Method name &apos;NaoLigarMotorSemCombustivelTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="143" column="5" severity="error" message="&apos;METHOD_DEF&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="144" column="17" severity="error" message="Method name &apos;MotorImpactaTrocaMarchaTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="155" column="17" severity="error" message="Method name &apos;AtualizaPainelComCombustivelTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="157" column="31" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="158" column="22" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="166" column="17" severity="error" message="Method name &apos;CarroAceleraGastaCombustivelTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="166" column="51" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="177" column="17" severity="error" message="Method name &apos;AceleraMudaPressaoPneuTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="177" column="45" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="178" column="30" severity="error" message="&apos;30&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="179" column="22" severity="error" message="&apos;30&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="180" column="31" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="182" column="22" severity="error" message="&apos;31&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="184" column="22" severity="error" message="&apos;33&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="189" column="17" severity="error" message="Method name &apos;PneuReservaTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="189" column="34" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="190" column="43" severity="error" message="&apos;,&apos; está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="194" column="17" severity="error" message="Method name &apos;FreiaDesceSuspensaoTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="194" column="42" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="195" column="33" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="196" column="22" severity="error" message="&apos;10&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="198" column="22" severity="error" message="&apos;9&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="202" column="17" severity="error" message="Method name &apos;BancoEsquentatest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="202" column="36" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="203" column="13" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="203" column="44" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="204" column="13" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="204" column="26" severity="error" message="&apos;20&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="205" column="13" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="205" column="44" severity="error" message="&apos;23&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="206" column="13" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 12. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="206" column="26" severity="error" message="&apos;23&apos; é um número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="210" column="17" severity="error" message="Method name &apos;AtivarModoPilotoAutomaticoTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="210" column="49" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="216" column="17" severity="error" message="Method name &apos;DestivarModoPilotoAutomaticoTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="216" column="51" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="222" column="17" severity="error" message="Method name &apos;LigarAlarmaTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="222" column="34" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="230" column="17" severity="error" message="Method name &apos;DesligarAlarmaTest&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="230" column="37" severity="error" message="&apos;{&apos; não está precedido por espaço em branco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="236" column="5" severity="error" message="&apos;}&apos; é sucedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="240" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="241" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="242" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 </file>
 </checkstyle>

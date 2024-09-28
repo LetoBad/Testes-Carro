@@ -16,13 +16,14 @@ public class Main {
         Suspensao sistemaSuspensao = new Suspensao("Barra invertida", "Carbono", 20, 10, "Sparco", "Bom");
         Transmisao transmissao = new Transmisao("Manual" , 6 , "Aluminio", "Porsche" , true , 1);
         LuzesFreio luzesFreio = new LuzesFreio("Led", 10, "Vermelha", false, "Luz de freio");
-
+        Alarma sistemAlarma = new Alarma(false);
+        ChaveCarro chave = new ChaveCarro(80);
 
         carro Carro = new carro(sistemaBanco , sistemaCombustivel, sistemaDirecao, sistemaFreios, sistemaLuzes, motor , sistemaPainel , sistemaPneus , sistemaPortas
-        , sistemaEletrico , sistemaSuspensao , transmissao ,luzesFreio , "Porsche" , 2019 , "Branco" , "FAN-2020" , 0 );
+        , sistemaEletrico , sistemaSuspensao , transmissao ,luzesFreio ,sistemAlarma ,chave , "Porsche" , 2019 , "Branco" , "FAN-2020" , 0 );
 
         
-       /*  Carro.abastecerCarro(10);
+        Carro.abastecerCarro(10);
         Carro.abrirPorta();
         Carro.verificarNivel();
         Carro.verificarBateria();
@@ -42,7 +43,7 @@ public class Main {
         Carro.ligandoLuzes(true);
         Carro.desligar();
 
-        sistemaLuzes.ligar(sistemaEletrico);*/
+        sistemaLuzes.ligar(sistemaEletrico);
 
         motor.ligarMotor(sistemaCombustivel, sistemaEletrico);
         sistemaFreios.freiar(luzesFreio, sistemaPneus, sistemaSuspensao);

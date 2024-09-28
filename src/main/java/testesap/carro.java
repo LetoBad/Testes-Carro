@@ -14,6 +14,8 @@ public class carro {
     private Suspensao sistemaSuspensao;
     private Transmisao Transmissao;
     private LuzesFreio luzesFreio;
+    private Alarma sisteAlarma;
+    private ChaveCarro chave;
     private String modelo;
     private int ano;
     private String cor;
@@ -22,7 +24,7 @@ public class carro {
     
     public carro(Banco sistemaBanco, Combustivel sistemaCombustivel, Direcao sistemaDirecao, Freios sistemaFreios,
             Luzes sistemaLuzes, Motor motor, Painel sistemaPainel, Pneus sistemaPneus, Portas sistemaPortas,
-            SistemaEletrico sistemaEletrico, Suspensao sistemaSuspensao, Transmisao transmissao, LuzesFreio luzesFreio , String modelo, int ano,
+            SistemaEletrico sistemaEletrico, Suspensao sistemaSuspensao, Transmisao transmissao, LuzesFreio luzesFreio, Alarma sisteAlarma , ChaveCarro chave , String modelo, int ano,
             String cor, String placa, double velocidade) {
         this.sistemaBanco = sistemaBanco;
         this.sistemaCombustivel = sistemaCombustivel;
@@ -40,6 +42,8 @@ public class carro {
         //abajo
         this.Transmissao = transmissao;
         this.luzesFreio = luzesFreio;
+        this.sisteAlarma = sisteAlarma;
+        this.chave = chave;
         this.modelo = modelo;
         this.ano = ano;
         this.cor = cor;

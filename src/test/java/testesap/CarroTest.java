@@ -25,6 +25,8 @@ public class CarroTest {
     private Suspensao suspensao;
     private Transmisao transmisao;
     private LuzesFreio luzesFreio;
+    private Alarma alarma;
+    private ChaveCarro chave;
 
     @BeforeEach
     public void setUp(){
@@ -41,7 +43,9 @@ public class CarroTest {
         suspensao = new Suspensao("Barra invertida", "Carbono", 20, 10, "Sparco", "Bom");
         transmisao = new Transmisao("Manual" , 6 , "Aluminio", "Porsche" , true , 2);
         luzesFreio = new LuzesFreio("Led", 0, "Vermelha", false, "Luz de freio");
-        Carroo = new carro(banco, combustivel, direcao, freios, luzes, motorr, painel, pneus, portas, eletrico, suspensao, transmisao,luzesFreio ,"Porsche", 2019, "Branco", "Fak-2029", 10);
+        alarma = new Alarma(false);
+        chave = new ChaveCarro(70);
+        Carroo = new carro(banco, combustivel, direcao, freios, luzes, motorr, painel, pneus, portas, eletrico, suspensao, transmisao,luzesFreio , alarma , chave ,"Porsche", 2019, "Branco", "Fak-2029", 10);
         pneusReserva = new Pneus("19/15", "Corssa", 27.0, "Pirelli", "Bom");
     }
 
@@ -213,6 +217,25 @@ public class CarroTest {
         direcao.DesativarModoPilotoAutomatico(eletrico);
         assertFalse(direcao.isAutomatico());
     }
+
+    @Test
+    public void LigarAlarmaTest(){
+        assertFalse(alarma.isEstado());
+
+        chave.ControleLigaAlarma(eletrico, alarma);
+        assertTrue(alarma.isEstado());
+    }
+
+    @Test
+    public void DesligarAlarmaTest(){
+        assertFalse(alarma.isEstado());
+        chave.ControleLigaAlarma(eletrico, alarma);
+        assertTrue(alarma.isEstado());
+        chave.ControleDesligaAlarma(eletrico, alarma);
+        assertFalse(alarma.isEstado());
+    }
+
+
 
     
     
