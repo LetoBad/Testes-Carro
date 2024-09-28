@@ -26,14 +26,23 @@ public class Alarma {
     public void DesligarAlarma(SistemaEletrico sistemaEletrico , ChaveCarro chave){
             if (chave.getCapacidadepila()>0) {
                 estado = false;
+                sonando = false;
             }    
     }
 
-    public void sonarAlarma(SistemaEletrico sistemaEletrico , Portas sistemaPortas){
+    /*public void sonarAlarma(SistemaEletrico sistemaEletrico , Portas sistemaPortas){
         if(sistemaEletrico.getEstado()== true && sistemaPortas.getEstado()== true){
             sonando = true;
             System.out.println("biiiiiiip biiiiiiip biiiiiiip kkkkk");
         }
+    }*/
+
+    public boolean isSonando() {
+        return sonando;
+    }
+
+    public void setSonando(boolean sonando) {
+        this.sonando = sonando;
     }
 
 
