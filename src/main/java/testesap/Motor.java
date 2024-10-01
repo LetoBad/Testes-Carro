@@ -1,9 +1,6 @@
 package testesap;
 
 public class Motor {
-	Combustivel combustible = new Combustivel("Gasolina", 70.0, 10, "x", true);
-	SistemaEletrico sistemaeletrico = new SistemaEletrico(12, 90, "Litio", true, "Mora");
-	static Motor motor = new Motor("V8", 510, 2.8, "Porsche", false);
 
 
 	private String tipo;
@@ -59,29 +56,26 @@ public class Motor {
 	public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
+	
+	public void ligarMotor(Combustivel sistemacombustivel , SistemaEletrico sistemaEletrico){
+        if(sistemacombustivel.verificarNivel()>0 && sistemaEletrico.getVoltagem() >= 12){
+            estado = true;
+            System.out.println("Motor Ligado!");
+            
+        }
+        else{
+            System.out.println("Não foi possivel ligar o motor, sem gasolina ou sem bateria");
+            estado=false;
+        }
+    }
 
-	public void ligarMotor() {
-		if (motor.getEstado()== false && combustible.getNivel() > 0 && sistemaeletrico.getEstado()== true) {
-			motor.setEstado(true);
-			System.out.println("motor ligado");
-		}
-		else{
-			System.out.println("Nao foi possivel ligar o motor");
-		}
-	}
-	public void desligarMotor() {
-		if (motor.getEstado() == true) {
-			motor.setEstado(false);
-			System.out.println("Motor Desligado");
-		}
-		else{
-			System.out.println("o motor ja esta desligado");
-		}
+	public void desligarMotor(){
+		estado = false;
+		System.out.println("Motor desligado!");
 	}
 
-	public static void main(String[] args) {
-		motor.ligarMotor();
-		motor.desligarMotor();
-	}
+    public boolean verificarEstado() {
+        return estado;
+    }
 	
 }

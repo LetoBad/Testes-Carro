@@ -6,6 +6,7 @@ public class Pneus {
 	private double pressao;
 	private String marca;
 	private String estado;
+	private double temperatura;
 
 	public Pneus(String tamanho, String tipo, double pressao, String marca, String estado) {
 		this.tamanho = tamanho;
@@ -55,8 +56,8 @@ public class Pneus {
 		this.estado = estado;
 	}
 
-	public void verificarPressao() {
-		System.out.println("A pressão atual dos pneus é: " + pressao + " PSI.");
+	public double verificarPressao() {
+		return pressao;
 	}
 
 	public void ajustarPressao(double novaPressao) {
@@ -68,9 +69,22 @@ public class Pneus {
 		}
 	}
 
-	public void substituir() {
-		estado = "novo";
-		System.out.println("O pneu foi substituído. Estado atual: " + estado);
+	public void substituir(String tamanho, String tipo, double pressao, String marca, String estado) {
+		this.tamanho = tamanho;
+		this.tipo = tipo;
+		this.pressao = pressao;
+		this.marca = marca;
+		this.estado = estado;
 	}
+
+	public double getTemperatura() {
+		return temperatura;
+	}
+
+	public void setTemperatura(double temperatura) {
+		this.temperatura = temperatura;
+	}
+
+	
 
 }

@@ -7,7 +7,8 @@ public class Direcao {
 	private String material;
 	private double relacion;
 	private String marca;
-	private double angulo;
+	private double angulo = 0;
+	private boolean automatico;
 
 	public Direcao(String tipo, boolean assistido, String material, double relacion, String marca, double angulo) {
 		this.tipo = tipo;
@@ -83,8 +84,33 @@ public class Direcao {
 		}
 	}
 
-	public void substituirComponente(String componente) {
-		System.out.println("O componente " + componente + " foi substituído no sistema de direção.");
+	public void substituirComponente(String tipo, boolean assistido, String material, double relacion, String marca,
+			double angulo) {
+		this.tipo = tipo;
+		this.assistido = assistido;
+		this.material = material;
+		this.relacion = relacion;
+		this.marca = marca;
+		this.angulo = angulo;
+	}
+
+	public void AtivarModoPilotoAutomatico(SistemaEletrico sistemaEletrico) {
+		if (sistemaEletrico.getVoltagem() >= 12) {
+			automatico = true;
+		}
+	}
+
+	public void DesativarModoPilotoAutomatico(SistemaEletrico sistemaEletrico) {
+		automatico = false;
+
+	}
+
+	public boolean isAutomatico() {
+		return automatico;
+	}
+
+	public void setAutomatico(boolean automatico) {
+		this.automatico = automatico;
 	}
 
 }

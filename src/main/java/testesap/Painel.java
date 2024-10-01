@@ -2,21 +2,13 @@ package testesap;
 
 public class Painel {
 
-	static Transmisao trans = new Transmisao(1, "Manual", 6, "Aluminio", "Porsche", true);
-
-	Luzes luzes = new Luzes("Farol", 10, "Branca", false, "LED");
-
-	Direcao direcao = new Direcao("Assistida", true, "Carbono", 2.7, "Momo", 0);
-
-
-
 	private String tipo;
 	private String display;
 	private boolean controle;
 	private String marca;
 	private boolean estado;
-	private int marcha;
 	private String pisca;
+	private String info;
 
 	public Painel(String tipo, String display, boolean controle, String marca, boolean estado , String pisca) {
 		this.tipo = tipo;
@@ -87,14 +79,6 @@ public class Painel {
         }
     }
 
-    
-    public void atualizarInformacoes(String info) {
-        if (estado) {
-            System.out.println("Atualizando informações no painel: " + info);
-        } else {
-            System.out.println("O display está desligado. Ligue o display para atualizar as informações.");
-        }
-    }
 
 	public String getPisca() {
 		return pisca;
@@ -104,11 +88,29 @@ public class Painel {
 		this.pisca = pisca;
 	}
 
-	
+	public String getInfo() {
+		return info;
+	}
 
-    /*public String Painel(String string, Object object, boolean b, Object object2, boolean c) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Painel'");
-    }*/
+	public void setInfo(String info) {
+		this.info = info;
+	}
+
+
+	public void atualizarInformacoes(Motor motor, Combustivel sistemaCombustivel, Luzes luzes, Portas portas, Suspensao suspensao, Banco banco, SistemaEletrico sistemaeletrico, double velocidade) {
+        if (sistemaeletrico.getEstado()) {
+            info = "INFORMAÇÕES DO PAINEL:" + "\nPotência do Motor: " +
+                    motor.getPotencia() + "CV" + "\n" +
+                    portas.verificarEstado() + "\n" +
+                    suspensao.VerificaEstado() + "\n" +
+                    banco.getEstado() + "\n" +
+                    "Nível de Combustivel: " + sistemaCombustivel.verificarNivel() + "L" + "\n" +
+                    "Velocidade: " + velocidade + "Km";
+        } else {
+            System.out.println("Não foi possivel ligar o painel, há um problema no sistema elétrico.");
+        }
+    }
+
+
 }
 

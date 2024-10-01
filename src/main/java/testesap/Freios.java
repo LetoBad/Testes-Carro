@@ -6,6 +6,7 @@ public class Freios {
 	private String marca;
 	private double tamanho;
 	private double desgaste;
+	private boolean freia;
 
 	public Freios(String tipo, String material, String marca, double tamanho, double desgaste) {
 		this.tipo = tipo;
@@ -14,6 +15,11 @@ public class Freios {
 		this.tamanho = tamanho;
 		this.desgaste = desgaste;
 	}
+
+	public double verificarDesgaste() {
+        return desgaste;
+
+    }
 
 	public String getTipo() {
 		return tipo;
@@ -55,23 +61,49 @@ public class Freios {
 		this.desgaste = desgaste;
 	}
 
-	public String verificarDesgaste() {
-		if (desgaste >= 75) {
-			return "Desgaste alto, substituição recomendada.";
-		} else if (desgaste >= 50) {
-			return "Desgaste médio, monitore o desgaste regularmente.";
-		} else {
-			return "Desgaste baixo, os freios estão em bom estado.";
-		}
+	public void SubstituirFreios(String tipo, String material, String marca, double tamanho,  double desgaste) {
+        this.tipo = tipo;
+        this.material = material;
+		this.marca = marca;
+		this.tamanho = tamanho;
+        this.desgaste = desgaste;
+    }
+
+	public void substituirPastilhas(){
+        desgaste = (Math.random() * 90 );
+        if (desgaste<75){
+            System.out.println("Pastilha em bom estado ainda.");
+        }
+        else {
+            System.out.println("Pastilha substituida!");
+        }
+    }
+
+	public void ajustarFreio(double Ajuste){
+        if(Ajuste<=10){
+            System.out.println("Freio ajustado");
+        }
+        else {
+            System.out.println("Freio funcionando Bem");
+        }
+    }
+
+
+	
+	public void freiar(LuzesFreio luzesFreio , Pneus pneus , Suspensao suspensao){
+			luzesFreio.setEstado(true);
+			pneus.setPressao(pneus.getPressao() + 1);
+			System.out.println(pneus.getPressao());
+			suspensao.setAltura(suspensao.getAltura()-1);
 	}
 
-	public void substituirPastilhas() {
-		this.desgaste = 0;
-		System.out.println("As pastilhas de freio foram substituídas.");
+	public boolean isFreia() {
+		return freia;
 	}
 
-	public void ajustarFreio() {
-		System.out.println("O sistema de freio foi ajustado corretamente.");
+	public void setFreia(boolean freia) {
+		this.freia = freia;
 	}
+
 
 }
